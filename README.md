@@ -1,2 +1,3 @@
 # Pong_game
-A pong game
+A pong game in godot
+
