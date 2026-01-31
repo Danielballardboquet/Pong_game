@@ -1,0 +1,257 @@
+[gd_scene load_steps=17 format=3 uid="uid://cdvl1456xrhnt"]
+
+[ext_resource type="Script" uid="uid://bf6rad26o5hgo" path="res://Scripts/mov.gd" id="1_glv2v"]
+[ext_resource type="Script" uid="uid://bwss0hlwjj70p" path="res://Scripts/ia.gd" id="2_uu6xs"]
+[ext_resource type="Script" uid="uid://bq8blm8626rww" path="res://Scripts/ball.gd" id="3_r0du0"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_rxg2q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rxg2q"]
+size = Vector2(15.7259, 15.8675)
+
+[sub_resource type="Gradient" id="Gradient_rxg2q"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0, 0.837662, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_glv2v"]
+gradient = SubResource("Gradient_rxg2q")
+width = 16
+height = 16
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r0du0"]
+size = Vector2(1163, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cm0pq"]
+size = Vector2(22, 662)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cm0pq"]
+radius = 21.0238
+
+[sub_resource type="Gradient" id="Gradient_r0du0"]
+offsets = PackedFloat32Array(0.665584, 0.714286)
+colors = PackedColorArray(0, 0, 0, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_cm0pq"]
+gradient = SubResource("Gradient_r0du0")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+metadata/_snap_enabled = true
+metadata/_snap_count = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_glv2v"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_uu6xs"]
+
+[sub_resource type="FontFile" id="FontFile_cm0pq"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/22/0/ascent = 0.0
+cache/0/22/0/descent = 0.0
+cache/0/22/0/underline_position = 0.0
+cache/0/22/0/underline_thickness = 0.0
+cache/0/22/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/23/0/ascent = 0.0
+cache/0/23/0/descent = 0.0
+cache/0/23/0/underline_position = 0.0
+cache/0/23/0/underline_thickness = 0.0
+cache/0/23/0/scale = 1.0
+cache/0/24/0/ascent = 0.0
+cache/0/24/0/descent = 0.0
+cache/0/24/0/underline_position = 0.0
+cache/0/24/0/underline_thickness = 0.0
+cache/0/24/0/scale = 1.0
+cache/0/25/0/ascent = 0.0
+cache/0/25/0/descent = 0.0
+cache/0/25/0/underline_position = 0.0
+cache/0/25/0/underline_thickness = 0.0
+cache/0/25/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+cache/0/1/0/ascent = 0.0
+cache/0/1/0/descent = 0.0
+cache/0/1/0/underline_position = 0.0
+cache/0/1/0/underline_thickness = 0.0
+cache/0/1/0/scale = 1.0
+cache/0/6/0/ascent = 0.0
+cache/0/6/0/descent = 0.0
+cache/0/6/0/underline_position = 0.0
+cache/0/6/0/underline_thickness = 0.0
+cache/0/6/0/scale = 1.0
+cache/0/36/0/ascent = 0.0
+cache/0/36/0/descent = 0.0
+cache/0/36/0/underline_position = 0.0
+cache/0/36/0/underline_thickness = 0.0
+cache/0/36/0/scale = 1.0
+cache/0/46/0/ascent = 0.0
+cache/0/46/0/descent = 0.0
+cache/0/46/0/underline_position = 0.0
+cache/0/46/0/underline_thickness = 0.0
+cache/0/46/0/scale = 1.0
+cache/0/56/0/ascent = 0.0
+cache/0/56/0/descent = 0.0
+cache/0/56/0/underline_position = 0.0
+cache/0/56/0/underline_thickness = 0.0
+cache/0/56/0/scale = 1.0
+cache/0/66/0/ascent = 0.0
+cache/0/66/0/descent = 0.0
+cache/0/66/0/underline_position = 0.0
+cache/0/66/0/underline_thickness = 0.0
+cache/0/66/0/scale = 1.0
+cache/0/76/0/ascent = 0.0
+cache/0/76/0/descent = 0.0
+cache/0/76/0/underline_position = 0.0
+cache/0/76/0/underline_thickness = 0.0
+cache/0/76/0/scale = 1.0
+cache/0/86/0/ascent = 0.0
+cache/0/86/0/descent = 0.0
+cache/0/86/0/underline_position = 0.0
+cache/0/86/0/underline_thickness = 0.0
+cache/0/86/0/scale = 1.0
+cache/0/37/0/ascent = 0.0
+cache/0/37/0/descent = 0.0
+cache/0/37/0/underline_position = 0.0
+cache/0/37/0/underline_thickness = 0.0
+cache/0/37/0/scale = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_fos0i"]
+line_spacing = 4.01
+paragraph_spacing = 0.26
+font = SubResource("FontFile_cm0pq")
+font_size = 36
+font_color = Color(0.823924, 0.823924, 0.823924, 1)
+shadow_size = 0
+shadow_offset = Vector2(0.78, 1)
+
+[node name="Game" type="Node2D"]
+
+[node name="Padle" type="Node2D" parent="."]
+
+[node name="IA" type="CharacterBody2D" parent="Padle" groups=["Paddle"]]
+material = SubResource("CanvasItemMaterial_rxg2q")
+use_parent_material = true
+position = Vector2(1073, -318)
+scale = Vector2(1.88152, 6.413)
+script = ExtResource("2_uu6xs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Padle/IA"]
+position = Vector2(2.13702, -2.94584)
+scale = Vector2(1, 1.00451)
+shape = SubResource("RectangleShape2D_rxg2q")
+
+[node name="Sprite2D" type="Sprite2D" parent="Padle/IA/CollisionShape2D"]
+z_index = 1
+position = Vector2(-0.0548963, 0.0100906)
+texture = SubResource("GradientTexture2D_glv2v")
+
+[node name="Player" type="CharacterBody2D" parent="Padle" groups=["Paddle"]]
+material = SubResource("CanvasItemMaterial_rxg2q")
+use_parent_material = true
+position = Vector2(81, -312)
+scale = Vector2(1.88152, 6.413)
+script = ExtResource("1_glv2v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Padle/Player"]
+position = Vector2(2.13704, -2.50507)
+scale = Vector2(1, 1.00451)
+shape = SubResource("RectangleShape2D_rxg2q")
+
+[node name="Sprite2D" type="Sprite2D" parent="Padle/Player/CollisionShape2D"]
+z_index = 1
+position = Vector2(-0.0548963, 0.0100906)
+texture = SubResource("GradientTexture2D_glv2v")
+
+[node name="Wall" type="Node2D" parent="."]
+position = Vector2(-3, 0)
+
+[node name="BottomWall" type="StaticBody2D" parent="Wall" groups=["Wall"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall/BottomWall"]
+position = Vector2(584.5, 20)
+shape = SubResource("RectangleShape2D_r0du0")
+
+[node name="LeftWall" type="StaticBody2D" parent="Wall" groups=["LeftWall"]]
+position = Vector2(-9, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall/LeftWall"]
+position = Vector2(1, -321)
+shape = SubResource("RectangleShape2D_cm0pq")
+
+[node name="RightWall" type="StaticBody2D" parent="Wall" groups=["RightWall"]]
+position = Vector2(1175, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall/RightWall"]
+position = Vector2(1, -321)
+shape = SubResource("RectangleShape2D_cm0pq")
+
+[node name="UpperWall" type="StaticBody2D" parent="Wall" groups=["Wall"]]
+position = Vector2(0, -682)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall/UpperWall"]
+position = Vector2(584.5, 20)
+shape = SubResource("RectangleShape2D_r0du0")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(577, -324)
+
+[node name="Ball" type="CharacterBody2D" parent="."]
+z_index = 1
+position = Vector2(582, -323)
+collision_layer = 65535
+collision_mask = 7
+script = ExtResource("3_r0du0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ball"]
+shape = SubResource("CircleShape2D_cm0pq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Ball/CollisionShape2D"]
+texture = SubResource("GradientTexture2D_cm0pq")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = -1
+material = SubResource("CanvasItemMaterial_glv2v")
+offset_top = -652.0
+offset_right = 40.0
+offset_bottom = -612.0
+scale = Vector2(29.049, 16.5424)
+texture = SubResource("CanvasTexture_uu6xs")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LeftLabel" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 37.0
+offset_top = -563.0
+offset_right = 77.0
+offset_bottom = -526.0
+scale = Vector2(12.1549, 16.0419)
+text = "0"
+label_settings = SubResource("LabelSettings_fos0i")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RightLabel" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 645.0
+offset_top = -563.0
+offset_right = 685.0
+offset_bottom = -526.0
+scale = Vector2(12.1549, 16.0419)
+text = "0"
+label_settings = SubResource("LabelSettings_fos0i")
+horizontal_alignment = 1
+vertical_alignment = 1
